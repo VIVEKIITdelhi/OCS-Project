@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Orgs Explorer</title>
+    <!-- Adding title icon -->
+    <link rel="icon" type="image/x-icon" href="public/Images/github.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="public/style.css">
+    
+</head>
+<body>
+    <!-- Container fluid for better respone -->
+    <div class="container-fluid">  
+        <h1>GitHub Organistation Explorer</h1>
+        <!-- Creating a form to take input -->
+        <form  id="gitHubForm" >
+            <input id="orgInput" style="background-color: white" type="text" name="Org Name" placeholder="Organistation Name">
+            <input id="n" type="number" name="mostforks" placeholder="N(No. of Repos)">
+            <input id="m" type="number" name="oldestfolkers" placeholder="M(Oldest Forkers)">
+            <button type="submit" class="btn btn-dark" style="--bs-btn-padding-y: .2rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 1rem;"><strong><i class="fa-brands fa-github"></i>Fetch</strong></button>
+        </form>
+        <ul id="orgRepos" class="list-group mx-auto mb-5" style="width: 500px">
+        
+        </ul>
+    </div>
+    <!-- Adding the javascript created -->
+    <script src="index.js"></script>
+</body>
+</html>
