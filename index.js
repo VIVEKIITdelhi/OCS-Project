@@ -82,7 +82,7 @@ gitHubForm.addEventListener('submit', (e) => {
 })
 // Function to fetch Repository
 function requestUserRepos(orgname) {
-    const accessToken = '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';
+    const accessToken = 'YOUR_PERSONAL_TOKEN';
     const headers = new Headers();
     headers.append('Authorization', `Token ${accessToken}`);
     const options = {
@@ -95,7 +95,7 @@ function requestUserRepos(orgname) {
 }
 // Function to fetch oldest forkers
 function requestOldestForker(repoName, orgName, m) {
-    const accessToken = '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';
+    const accessToken = 'YOUR_PERSONAL_TOKEN';
     const headers = new Headers();
     headers.append('Authorization', `Token ${accessToken}`);
     const options = {
